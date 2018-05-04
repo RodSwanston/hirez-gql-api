@@ -1,0 +1,18 @@
+{
+	"extends": "eslint:recommended",
+	"parserOptions": {
+		"ecmaVersion": 2017,
+		"ecmaFeatures": {
+			"ecmaVersion": 8,
+			"experimentalObjectRestSpread": true
+		},
+		"sourceType": "module"
+	},
+	"env": {
+		"node": true
+	},
+	"rules": {
+		"no-console": 0,
+		"no-unused-vars": 1
+	}
+}

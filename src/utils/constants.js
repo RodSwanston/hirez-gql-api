@@ -9,10 +9,12 @@ export const URL = {
 		pc: 'http://api.paladins.com/paladinsapi.svc',
 		ps4: 'http://api.ps4.paladins.com/paladinsapi.svc',
 		xbox: 'http://api.xbox.paladins.com/paladinsapi.svc',
+		cms: 'https://cms.paladins.com/wp-json/api'
 	},
 	smite: {
 		pc: 'http://api.smitegame.com/smiteapi.svc',
 		ps4: 'http://api.ps4.smitegame.com/smiteapi.svc',
+		xbox: 'http://api.xbox.smitegame.com/smiteapi.svc'
 	}
 }
 

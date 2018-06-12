@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src -d dist",
 		"start": "babel-node dist/index.js | bunyan",
-		"deploy": "now --dotenv=.env.production --docker --public",
+		"deploy": "now --dotenv=.env.production --docker --public --regions sfo1",
     "dev": "nodemon src/index.js --exec babel-node | bunyan"
   },
   "keywords": [

@@ -11,6 +11,7 @@ import { ItemType } from './items'
 import { LeagueLeaderboardType, LeagueSeasonType } from './league'
 import { EsportMatchType } from './team'
 import { PatchInfoType } from './patch-info'
+import { NewsType, NewsDetailType } from './news'
 
 export {
 	PlayerType,
@@ -30,4 +31,6 @@ export {
 	LeagueSeasonType,
 	EsportMatchType,
 	PatchInfoType,
+	NewsType,
+	NewsDetailType
 }

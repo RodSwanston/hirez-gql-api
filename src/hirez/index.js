@@ -1,5 +1,7 @@
+import axios from 'axios'
 import config from '../config'
 import { sessions } from './session'
+import { URL } from '../utils/constants'
 import { logger, sortBy } from '../utils'
 
 function getSession(type=config.type, platform=config.platform) {
@@ -396,4 +398,30 @@ export async function getPatchInfo({ platform, type }) {
 	} catch (error) {
 		logger.error(error)
 	}
+}
+
+export async function getNews({ page=1, offset=0 }) {
+	const url = `${URL.paladins.cms}/get-posts/${page}?offset=${offset}`
+
+	try {
+		const { data } = await axios.get(url)
+		return data
+	} catch (e) {
+		logger.error(e)
+	}
+
+	return []
+}
+
+export async function getNewsDetails({ slug }) {
+	const url = `${URL.paladins.cms}/get-post/1?slug=${slug}`
+
+	try {
+		const { data } = await axios.get(url)
+		return data
+	} catch (e) {
+		logger.error(e)
+	}
+
+	return {}
 }

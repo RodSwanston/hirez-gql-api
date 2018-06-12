@@ -11,6 +11,7 @@ import ItemsQuery from './items'
 import LeagueQuery from './league'
 import TeamQuery from './team'
 import PatchInfoQuery from './patch-info'
+import NewsQuery from './news'
 
 export default {
 	...PlayersQuery,
@@ -26,4 +27,5 @@ export default {
 	...LeagueQuery,
 	...PatchInfoQuery,
 	...TeamQuery,
+	...NewsQuery
 }

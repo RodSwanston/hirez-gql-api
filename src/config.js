@@ -9,7 +9,8 @@ const config = {
 	nodeEnv: process.env.NODE_ENV || 'dev',
 	devId: process.env.DEV_ID || 0,
 	authKey: process.env.AUTH_KEY || '',
-	urls: process.env.URLS || []
+	urls: process.env.URLS || [],
+	apolloKey:  process.env.APOLLO_KEY || ''
 }
 
 export default config

@@ -1,32 +1,35 @@
 {
   "name": "hirez-gql-api",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Hirez graphql api server",
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src -d dist",
-		"start": "babel-node dist/index.js | bunyan",
-		"deploy": "now --dotenv=.env.production --docker --public --regions sfo1",
+    "start": "babel-node dist/index.js | bunyan",
+    "deploy": "now --dotenv=.env.production --docker --public --regions sfo1",
     "dev": "nodemon src/index.js --exec babel-node | bunyan"
   },
   "keywords": [
-		"hirez",
-		"paladins",
+    "hirez",
+    "paladins",
 		"smite",
-		"graphql",
-		"api"
-	],
+		"server",
+		"node",
+		"apollo",
+    "graphql",
+    "api"
+  ],
   "author": "Rodman Swanston <swanston.rod@gmail.com> (https://github.com/RodSwanston)",
   "license": "MIT",
   "dependencies": {
+    "apollo-server": "^2.0.0-beta.10",
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "bunyan": "^1.8.12",
     "cors": "^2.8.4",
     "dotenv": "^5.0.1",
-    "express": "^4.16.2",
-    "express-graphql": "^0.6.12",
     "graphql": "0.13.0",
+    "graphql-tag": "^2.9.2",
     "md5": "^2.2.1",
     "moment": "^2.21.0"
   },

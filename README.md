@@ -29,14 +29,11 @@ or
 **1.** Create a `.env` file with the following variables.
 
 ```sh
-PORT=3000
 NODE_ENV=dev | prod
-GRAPHIQL=true | false
 DEV_ID=YOUR DEV ID
 AUTH_KEY=YOUR AUTH KEY
 DEF_TYPE=paladins
 DEF_PLATFORM=pc
-URLS=['http://localhost:3000', 'localhost:3000'] # These will be the urls allowed by CROS
 ```
 
 **2.** Run the project in dev mode.
@@ -47,7 +44,7 @@ or
 
 ```yarn dev```
 
-Now you can go to [localhost:3000/graphql](http://localhost:3000/graphql) and start testing your local server.
+Now you can go to [localhost:4000](http://localhost:4000) and start testing your local server.
 
 > **Note:** Development credentials can be obtained by completing [this](https://fs12.formsite.com/HiRez/form48/secure_index.html) application.
 

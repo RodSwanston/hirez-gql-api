@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { ApolloError } from 'apollo-server'
 import config from '../config'
 import {
 	genUrl, logger,
@@ -43,7 +44,6 @@ export class SessionApi {
 				throw new Error(ret_msg)
 			}
 
-
 			process.env[this.sessionType] = session_id
 			await jsonFile('write', { [this.sessionType]: session_id })
 			const testSession = await this.test()
@@ -51,6 +51,7 @@ export class SessionApi {
 			return { session_id, testSession }
 		} catch (error) {
 			logger.error(error)
+			throw new ApolloError(error)
 		}
   }
 
@@ -99,8 +100,9 @@ export class SessionApi {
 			}
 
 			return data
-		} catch ({ message }) {
-			logger.error(message, url)
+		} catch (error) {
+			logger.error(error.message, url)
+			throw new ApolloError(error)
 		}
 	}
 }

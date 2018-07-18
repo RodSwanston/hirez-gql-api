@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server'
+import { gql } from 'apollo-server-express'
 import { getPatchInfo } from '../hirez'
 
 export const PatchInfoType = gql`

@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server'
+import { gql } from 'apollo-server-express'
 import { getNews, getNewsDetails } from '../hirez'
 
 export const NewsType = gql`

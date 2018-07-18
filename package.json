@@ -12,36 +12,37 @@
   "keywords": [
     "hirez",
     "paladins",
-		"smite",
-		"server",
-		"node",
-		"apollo",
+    "smite",
+    "server",
+    "node",
+    "apollo",
     "graphql",
     "api"
   ],
   "author": "Rodman Swanston <swanston.rod@gmail.com> (https://github.com/RodSwanston)",
   "license": "MIT",
   "dependencies": {
-    "apollo-server": "^2.0.0-beta.10",
+    "apollo-server-express": "^2.0.0-rc.10",
     "axios": "^0.18.0",
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "bunyan": "^1.8.12",
     "cors": "^2.8.4",
-    "dotenv": "^5.0.1",
-    "graphql": "0.13.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "graphql": "^0.13.2",
     "graphql-tag": "^2.9.2",
     "md5": "^2.2.1",
-    "moment": "^2.21.0"
+    "moment": "^2.22.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.2.2",
-    "babel-preset-env": "^1.6.1",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
-    "nodemon": "^1.15.1"
+    "nodemon": "^1.18.3"
   },
   "resolutions": {
-    "graphql": "0.13.0",
-    "**/graphql": "0.13.0"
+    "graphql": "0.13.2",
+    "**/graphql": "0.13.2"
   }
 }

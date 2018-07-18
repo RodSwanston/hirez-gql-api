@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server'
+import { gql } from 'apollo-server-express'
 import { getChampionRanks } from '../hirez'
 
 export const ChampionsRankType = gql`

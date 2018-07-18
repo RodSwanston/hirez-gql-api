@@ -34,6 +34,7 @@ DEV_ID=YOUR DEV ID
 AUTH_KEY=YOUR AUTH KEY
 DEF_TYPE=paladins
 DEF_PLATFORM=pc
+PORT=4000
 ```
 
 **2.** Run the project in dev mode.

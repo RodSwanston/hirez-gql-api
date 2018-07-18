@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server'
+import { gql } from 'apollo-server-express'
 import { getEsportsProLeagueDetails } from '../hirez'
 
 function getTeam(esportMatch, homeTeam=true) {

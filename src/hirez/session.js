@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { ApolloError } from 'apollo-server'
+import { ApolloError } from 'apollo-server-express'
 import config from '../config'
 import {
 	genUrl, logger,

@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server'
+import { gql } from 'apollo-server-express'
 import { getMatchHistory, getMatchidsByQueue } from '../hirez'
 
 function getItemMatch(matchType, item=false) {

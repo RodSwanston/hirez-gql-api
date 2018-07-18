@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server'
+import { gql } from 'apollo-server-express'
 import { getQueueStats } from '../hirez'
 
 export const QueueStatsType = gql`

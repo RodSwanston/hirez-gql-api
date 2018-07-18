@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server'
+import { gql } from 'apollo-server-express'
 import { getChampions, getChampionSkins } from '../hirez'
 
 function getChampionAbilities(champion, times=5) {

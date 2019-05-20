@@ -15,6 +15,7 @@ export async function getPlayer({ player, platform, type }) {
 
 	try {
 		const data = await session.makeRequest(URL, params, true)
+		logger.info(data)
 		return data
 	} catch (error) {
 		logger.error(error)

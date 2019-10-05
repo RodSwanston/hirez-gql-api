@@ -70,6 +70,7 @@ export const ChampionType = gql`
 		Lore: String
 		Name: String
 		OnFreeRotation: String
+		OnFreeWeeklyRotation: String
 		Pantheon: String
 		Pros: String
 		Roles: String

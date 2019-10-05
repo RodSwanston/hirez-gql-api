@@ -30,20 +30,7 @@ export function genUrl(urlPath, sessionId, platform=config.platform, type=config
 
 export const logger = bunyan.createLogger({
 	name: 'logger',
-	src: true,
-	serializers: {
-		err: bunyan.stdSerializers.err,
-	},
-	streams: [
-    {
-      level: 'info',
-      stream: process.stdout
-    },
-    {
-      level: 'error',
-      path: 'error.log'
-    }
-  ]
+	src: true
 })
 
 export function getRetMsg(data) {

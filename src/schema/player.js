@@ -39,6 +39,8 @@ export const PlayerType = gql`
 		Total_Worshippers: Int
 		Wins: Int
 		Name: String
+		platform: String
+		Platform: String
 		Personal_Status_Message: String
 		Last_Login_Datetime: String
 		Created_Datetime: String
@@ -47,6 +49,8 @@ export const PlayerType = gql`
 		ret_msg: String
 		Tier_Conquest_String: String
 		RankedConquest: RankedConquest
+		RankedController: RankedConquest
+		RankedKBM: RankedConquest
 		Status: PlayerStatus
 		Friends: [Friend]
 		Champion_Ranks: [ChampionsRank]

@@ -29,6 +29,7 @@ export const PlayerType = gql`
 
 	type Player {
 		Id: Int
+		ActivePlayerId: Int
 		Level: Int
 		Leaves: Int
 		Losses: Int
@@ -54,6 +55,10 @@ export const PlayerType = gql`
 		Status: PlayerStatus
 		Friends: [Friend]
 		Champion_Ranks: [ChampionsRank]
+		type: String
+		HoursPlayed: Int
+		hz_gamer_tag: String
+		hz_player_name: String
 	}
 
 	extend type Query {
@@ -80,7 +85,7 @@ export const PlayerResolvers = {
 			const args = { player: Name, platform, type }
 			return await getFriends(args)
 		},
-		async Status({ Name, platform, type }) {
+		async Status({ Name,  platform, type }) {
 			const args = { player: Name, platform, type }
 			const status = await getPlayerStatus(args)
 			return Array.isArray(status) ? status[0] : status
